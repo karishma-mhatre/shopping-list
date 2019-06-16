@@ -4,14 +4,44 @@
     width: 100%;
     max-width: 250px;
     margin: 10px;
-    box-shadow: 0 0px 15px 0px $color-dark-grey;
+    // box-shadow: 0 0px 15px 0px $color-dark-grey;
     padding: 15px;
+    
+    div {
+        padding: 4px 0px;
+    }
 
     &-img {
 
         img {
             max-width: 100%;
         }
+    }
+
+    &-title {
+        border-bottom: 1px solid $color-light-grey;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    &-type-price {
+        justify-content: space-between;
+
+        .name {
+            color: $color-grey;
+        }
+
+        .value {
+            font-weight: $font-weight-large;
+        }
+
+
+    }
+
+    &-exclusive-price {
+        justify-content: space-between;
+        font-size: $font-size-smaller;
+        color: $color-blue;
     }
 }
 

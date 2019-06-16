@@ -11,17 +11,13 @@ class ProductCard extends React.Component {
                     <img src="https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/20190107214726-1.gif?h=282&amp;w=282" alt={id}></img>
                 </div>
                 <div className="product-title">{title}</div>
-                <div className="product-type">
-                    <div>Type</div>
-                    <div>{type}</div>
+                <div className="container product-type-price">
+                    <div className="name">{type}</div>
+                    <div className="value">Rs.{price}</div>
                 </div>
-                <div className="product-price">
-                    <div>Price</div>
-                    <div>{price}</div>
-                </div>
-                <div className="product-exclusice-price">
-                    <div>Price for exclusive members</div>
-                    <div>{exclusivePrice}</div>
+                <div className="container product-exclusive-price">
+                    <div className="name">Price for exclusive members</div>
+                    <div className="value">Rs.{exclusivePrice}</div>
                 </div>
             </div>
         )

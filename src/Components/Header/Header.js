@@ -2,7 +2,6 @@ import React from 'react';
 import logo from '../../assets/newlogo.8dcc6cc.png'
 import './header.scss';
 
-let current
 //Could change view manupulation in css.(T0 Do)
 function toggleMenu() {
   let menu = document.querySelector('.menu');

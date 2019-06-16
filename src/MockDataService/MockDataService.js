@@ -4,7 +4,16 @@ const products = [
     {
         id: uuid(),
         type: "T-Shirts",
-        title: "A",
+        title: "Avengers Endgame: Initiative",
+        price: 499,
+        exclusivePrice: 399,
+        theme: "Marvel",
+        genere: "Disney"
+    },
+    {
+        id: uuid(),
+        type: "T-Shirts",
+        title: "Marvel: More Than A Fan",
         price: 499,
         exclusivePrice: 399,
         theme: "Aladin",
@@ -13,7 +22,16 @@ const products = [
     {
         id: uuid(),
         type: "T-Shirts",
-        title: "Av",
+        title: "Avengers Endgame: Legendary",
+        price: 499,
+        exclusivePrice: 399,
+        theme: "Marvel",
+        genere: "Disney"
+    },
+    {
+        id: uuid(),
+        type: "T-Shirts",
+        title: "Iron Man: Arc Reactor Elemental (Glow in the Dark)",
         price: 499,
         exclusivePrice: 399,
         theme: "Aladin",
@@ -22,7 +40,7 @@ const products = [
     {
         id: uuid(),
         type: "T-Shirts",
-        title: "Ave",
+        title: "Black Panther: T'Challa's Necklace",
         price: 499,
         exclusivePrice: 399,
         theme: "Aladin",
@@ -31,34 +49,16 @@ const products = [
     {
         id: uuid(),
         type: "T-Shirts",
-        title: "Aven",
+        title: "Marvel: Logo",
         price: 499,
         exclusivePrice: 399,
-        theme: "Aladin",
+        theme: "Marvel",
         genere: "Disney"
     },
     {
         id: uuid(),
         type: "T-Shirts",
-        title: "Aveng",
-        price: 499,
-        exclusivePrice: 399,
-        theme: "Aladin",
-        genere: "Disney"
-    },
-    {
-        id: uuid(),
-        type: "T-Shirts",
-        title: "Avenge",
-        price: 499,
-        exclusivePrice: 399,
-        theme: "Aladin",
-        genere: "Disney"
-    },
-    {
-        id: uuid(),
-        type: "T-Shirts",
-        title: "Avenger",
+        title: "Captain America: Logo",
         price: 499,
         exclusivePrice: 399,
         theme: "Aladin",
@@ -75,7 +75,16 @@ const products = [
     },
     {
         id: uuid(),
-        type: "T",
+        type: "Full-Sleeve T-Shirts",
+        title: "GOT: Three Dragon",
+        price: 499,
+        exclusivePrice: 399,
+        theme: "Aladin",
+        genere: "Disney"
+    },
+    {
+        id: uuid(),
+        type: "Full-Sleeve T-Shirts",
         title: "Avengers",
         price: 499,
         exclusivePrice: 399,
@@ -84,7 +93,7 @@ const products = [
     },
     {
         id: uuid(),
-        type: "T-",
+        type: "Full-Sleeve T-Shirts",
         title: "Avengers",
         price: 499,
         exclusivePrice: 399,
@@ -93,45 +102,48 @@ const products = [
     },
     {
         id: uuid(),
-        type: "T-S",
-        title: "Avengers",
-        price: 499,
-        exclusivePrice: 399
-    },
-    {
-        id: uuid(),
-        type: "T-Sh",
-        title: "Avengers",
-        price: 499,
-        exclusivePrice: 399
-    },
-    {
-        id: uuid(),
-        type: "T-Shi",
+        type: "Full-Sleeve T-Shirts",
         title: "Avengers",
         price: 499,
         exclusivePrice: 399,
+        theme: "Aladin",
+        genere: "Disney"
     },
     {
         id: uuid(),
-        type: "T-Shir",
+        type: "Full-Sleeve T-Shirts",
         title: "Avengers",
         price: 499,
-        exclusivePrice: 399
+        exclusivePrice: 399,
+        theme: "DC",
+        genere: "Disney"
     },
     {
         id: uuid(),
-        type: "T-Shirt",
+        type: "Full-Sleeve T-Shirts",
         title: "Avengers",
         price: 499,
-        exclusivePrice: 399
+        exclusivePrice: 399,
+        theme: "Aladin",
+        genere: "Disney"
     },
     {
         id: uuid(),
-        type: "T-Shirts",
+        type: "Full-Sleeve T-Shirts",
         title: "Avengers",
         price: 499,
-        exclusivePrice: 399
+        exclusivePrice: 399,
+        theme: "Aladin",
+        genere: "Disney"
+    },
+    {
+        id: uuid(),
+        type: "Full-Sleeve T-Shirts",
+        title: "Avengers",
+        price: 499,
+        exclusivePrice: 399,
+        theme: "DC",
+        genere: "Disney"
     }
 ]
 export function getTShirts() {

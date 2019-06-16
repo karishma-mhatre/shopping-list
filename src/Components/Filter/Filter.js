@@ -1,10 +1,15 @@
 import React from 'react';
 import './filter.scss';
 
-const Type = ["T-Shirt", "Full TShirts"]
-const Theme = ["Aladin", "Newton", "Teenage Mutant Nimja"]
+const Type = ["T-Shirts", "Full-Sleeve T-Shirts"]
+const Theme = ["Aladin", "Newton", "Teenage Mutant Ninja", "Marvel", "DC"]
 const Genere = ["Thanos", "Spider"]
 
+//Could change view manupulation in css.(T0 Do)
+function toggleMenu() {
+    let menu = document.querySelector('.menu');
+    menu.classList.toggle("show-menu")
+}
 
 class Filters extends React.Component {
     selectedFilters = {}
@@ -22,10 +27,19 @@ class Filters extends React.Component {
 
         console.log(this.selectedFilters);
     }
+    //Could change view manupulation in css.(T0 Do)
+    toggleFilter = (e) => {
+        e.preventDefault();
+        let menu = document.querySelector('.filter-container');
+        menu.classList.toggle("show-filter")
+    }
+
      
     render() {
         this.selectedFilters = this.props.filters;
         return (
+            <>
+            <div className="filter-icon"><button className="btn" onClick={(e) => {this.toggleFilter(e)}}> <i className="fa fa-filter"></i></button></div>
             <div className="filter-container">
                 <div className="filter">
                     <div className="filter-title">PRODUCTS</div>
@@ -65,17 +79,19 @@ class Filters extends React.Component {
                             })
                         }
                     </div>
-                </div>
-                <div className="container filter-actions">
-                    <button onClick={(e) => {
-                        this.props.handleFilterChange(e, {
-                            Type: [],
-                            Theme: [],
-                            Genere: []
-                        })}} className="btn">Clear</button>
-                    <button onClick={(e) => {this.props.handleFilterChange(e, this.selectedFilters)}} className="btn">Apply</button>
+                    <div className="container filter-actions">
+                        <button onClick={(e) => {
+                            this.props.handleFilterChange(e, {
+                                Type: [],
+                                Theme: [],
+                                Genere: []
+                            })
+                        }} className="btn">Clear</button>
+                        <button onClick={(e) => { this.props.handleFilterChange(e, this.selectedFilters) }} className="btn">Apply</button>
+                    </div>
                 </div>
             </div>
+            </>
           );
     }
 }

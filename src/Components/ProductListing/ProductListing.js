@@ -20,6 +20,7 @@ class ProductListings extends React.Component {
             this.setState({loadingProducts: false})
         }) 
     }
+
     changePageNumber = (e, num) => {
         this.setState({pageNumber: num});
     }
@@ -58,21 +59,28 @@ class ProductListings extends React.Component {
     }
 
     render() {
+        //Could check the filtering result in console. Since mock data is litlle messed up. 
         let products = this.applyFilters();
         console.log(products);
         let productsPerPage = this.pagination(products, this.state.pageNumber, pageSize);
 
         return(
             <div className="product-container">
-                <Paginator pageNumber={this.state.pageNumber} pageSize={5} totalProducts={products.length} changePageNumber={this.changePageNumber}>
+                <Paginator  pageTitle="T-Shirts" pageNumber={this.state.pageNumber} pageSize={5} totalProducts={products.length} changePageNumber={this.changePageNumber}>
                 </Paginator>
                 <div className="container product-container">
+                    {
+                        this.state.loadingProducts && 
+                        <div className="loading">Loading Products....</div>
+                    }
                     {
                         productsPerPage.map((product, index) => {
                             return <ProductCard {...product} key={index}></ProductCard>
                         })
                     }
                 </div>
+                <Paginator pageNumber={this.state.pageNumber} pageSize={5} totalProducts={products.length} changePageNumber={this.changePageNumber}>
+                </Paginator>
             </div>
         )
     }
