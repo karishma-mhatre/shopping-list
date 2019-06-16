@@ -3,11 +3,18 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: $color-white;
+    width: 100%;
 }
- * {
-    
- }
 
  .container {
      display: flex;
+ }
+
+ .btn {
+     padding: 10px 20px;
+     color: $color-green;
+     background-color: $color-white;
+     border: 1px solid;
+     border-radius: 5px;
+     font-size: $font-size-smaller;
  }

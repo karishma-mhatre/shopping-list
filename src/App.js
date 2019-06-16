@@ -3,6 +3,7 @@ import './styles/common.scss';
 import Header from './Components/Header/Header';
 import ProductListing from './Components/ProductListing/ProductListing';
 import Filter from './Components/Filter/Filter';
+import Banner from './Components/Banner/Bannner';
 import './App.scss'
 
 const filverValue = {
@@ -30,6 +31,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header></Header>
+        <Banner></Banner>
         <div className="container content-container">
           <Filter filters={this.state.filters} handleFilterChange={this.handleFilterChange}></Filter>
           <ProductListing filters={this.state.filters}></ProductListing>
