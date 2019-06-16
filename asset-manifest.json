@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/shopping-list/static/css/main.23dae9a4.chunk.css",
+    "main.js": "/shopping-list/static/js/main.7d0ab381.chunk.js",
+    "main.js.map": "/shopping-list/static/js/main.7d0ab381.chunk.js.map",
+    "runtime~main.js": "/shopping-list/static/js/runtime~main.e244f075.js",
+    "runtime~main.js.map": "/shopping-list/static/js/runtime~main.e244f075.js.map",
+    "static/js/2.6e4f2013.chunk.js": "/shopping-list/static/js/2.6e4f2013.chunk.js",
+    "static/js/2.6e4f2013.chunk.js.map": "/shopping-list/static/js/2.6e4f2013.chunk.js.map",
+    "index.html": "/shopping-list/index.html",
+    "precache-manifest.cf31c0c25f9e5ec29d39589dac40453b.js": "/shopping-list/precache-manifest.cf31c0c25f9e5ec29d39589dac40453b.js",
+    "service-worker.js": "/shopping-list/service-worker.js",
+    "static/css/main.23dae9a4.chunk.css.map": "/shopping-list/static/css/main.23dae9a4.chunk.css.map",
+    "static/media/catban-420190517165547.webp": "/shopping-list/static/media/catban-420190517165547.fc98297a.webp",
+    "static/media/newlogo.8dcc6cc.png": "/shopping-list/static/media/newlogo.8dcc6cc.8dcc6cc2.png"
+  }
+}
